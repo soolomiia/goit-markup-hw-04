@@ -206,6 +206,7 @@ html {
   background-color: rgba(245, 244, 250, 1);
   background-position: center;
   background-repeat: no-repeat;
+  background-size: 70px;
   border-radius: 4px;
   margin-bottom: 30px;
 }
@@ -344,6 +345,7 @@ html {
 .addreses{
   color: var(--invert-text-color);
 }
+
 /* portfolio */
 .button-list{
   display: flex;
