@@ -326,7 +326,69 @@ html {
     text-align: center;
     margin: 0;
     color: var(--primary-text-color);
+    margin-bottom: 16px;
   }
+  .list-team-icon{
+  list-style: none;
+  display: flex;
+  padding-left: 0;
+  margin: 0;
+  justify-content: space-around;
+  
+}
+  .media-icon-team{
+    display: inline-block;
+    width: 44px;
+    height: 44px;
+    fill: #AFB1B8;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    padding: 12px
+  }
+  .link-team-icon:hover .media-icon-team{
+    background-color: var(--accent);
+    fill: var(--primary-background-color);
+  }
+
+.list-clients{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+	padding-left: 0;
+  margin: 0;
+}
+.item-clients{
+  display: inline-block;
+  margin-left: 30px;
+}
+.button-clients{
+  margin: 0;
+  padding: 0;
+  border: 1px solid #AFB1B8;
+  border-radius: 4px;
+  background-color: var(--primary-background-color);
+}
+.button-clients:hover .icon-clients{
+  fill: var(--accent);
+}
+
+.button-clients:hover,
+.button-clients:focus
+{
+  cursor: pointer;
+  border: 1px solid var(--accent);
+}
+
+.icon-clients{
+  height: 60px;
+  width: 106px;
+  padding: 0;
+  margin: 16px 32px;
+  fill: #AFB1B8;
+  background-color: var(--primary-background-color);
+}
+
   /* footer */
   footer{
     background: var(--third-background-color);
@@ -338,10 +400,7 @@ html {
   .footer-section{
     display: inline-flex;
   }
-  .footer-join{
-    list-style: none;
-    margin-left: 70px;
-  }
+
   .logo-studio-footer{
     color: var(--invert-text-color);
   }
@@ -370,13 +429,17 @@ html {
 .addreses{
   color: var(--invert-text-color);
 }
+.footer-join{
+  list-style: none;
+  margin-left: 70px;
+}
 .list-join-icon{
   list-style: none;
   display: flex;
   padding-left: 0;
+  margin: 0;
 
 }
-
 .text-join{
     font-weight: 700;
     font-size: 14px;
@@ -391,6 +454,16 @@ html {
   fill: #FFFFFF;
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
+  padding: 12px
+}
+.item-join-icon-first{
+  margin-left: 0;
+}
+.item-join-icon{
+  margin-left: 10px;
+}
+.link-join-icon:hover .media-icon-join{
+  background-color: var(--accent);
 }
 
 /* portfolio */
@@ -441,13 +514,22 @@ html {
   margin-right: -30px;
   margin-bottom: -30px;
 }
-
+.servise-card-button{
+  cursor: pointer;
+  background-color: var(--primary-background-color);
+  border: none;
+  padding: 0;
+}
+.servise-card-button:hover{
+ box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);;
+}
 .service-card {
   list-style: none;
   flex-basis: calc((100% - 90px) / 3);
   margin-right: 30px;
   margin-bottom: 30px;
   }
+
   .service-description{
     padding: 20px 24px;
     border: 1px solid #EEEEEE;
