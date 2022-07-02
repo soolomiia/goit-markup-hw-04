@@ -141,6 +141,24 @@ html {
   padding-top: 32px;
   padding-bottom: 32px;
 }
+.contact-mail-icon{
+  width: 16px;
+  height: 12px;
+  fill: var(--primary-text-color) ;
+  margin-right: 10px;
+}
+.contact-phone-icon{
+  width: 10px;
+  height: 16px;
+  fill: var(--primary-text-color);
+  margin-right: 10px;
+}
+.link-contact:hover .contact-mail-icon{
+  fill: var(--accent);
+}
+.link-contact:hover .contact-phone-icon{
+  fill: var(--accent);
+}
 .link-contact:hover,
 .link-contact:focus {
   color: var(--accent);
@@ -317,6 +335,13 @@ html {
     border-bottom: var(--accent);
 
   }
+  .footer-section{
+    display: inline-flex;
+  }
+  .footer-join{
+    list-style: none;
+    margin-left: 70px;
+  }
   .logo-studio-footer{
     color: var(--invert-text-color);
   }
@@ -344,6 +369,28 @@ html {
 
 .addreses{
   color: var(--invert-text-color);
+}
+.list-join-icon{
+  list-style: none;
+  display: flex;
+  padding-left: 0;
+
+}
+
+.text-join{
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.2; 
+    color: var(--invert-text-color);
+    margin-bottom: 20px;
+}
+.media-icon-join{
+  display: inline-block;
+  width: 44px;
+  height: 44px;
+  fill: #FFFFFF;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
 }
 
 /* portfolio */
