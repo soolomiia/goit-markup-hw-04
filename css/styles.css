@@ -154,10 +154,12 @@ html {
   fill: var(--primary-text-color);
   margin-right: 10px;
 }
-.link-contact:hover .contact-mail-icon{
+.link-contact:hover .contact-mail-icon,
+.link-contact:focus .contact-mail-icon{
   fill: var(--accent);
 }
-.link-contact:hover .contact-phone-icon{
+.link-contact:hover .contact-phone-icon,
+.link-contact:focus .contact-phone-icon{
   fill: var(--accent);
 }
 .link-contact:hover,
@@ -356,11 +358,13 @@ html {
   background-color:  #FFFFFF;
   border-radius: 50%;
 }
-  .link-team-icon:hover .media-icon-team{
+  .link-team-icon:hover .media-icon-team,
+  .link-team-icon:focus .media-icon-team{
     background-color: var(--accent);
     fill: #FFFFFF;
   }
-  .link-team-icon:hover{
+  .link-team-icon:hover,
+  .link-team-icon:focus{
     background-color: var(--accent);
   }
 .list-clients{
@@ -390,7 +394,8 @@ html {
   
 
 }
-.link-clients:hover .icon-clients{
+.link-clients:hover .icon-clients,
+.link-clients:focus .icon-clients{
   fill: var(--accent);
 }
 
@@ -481,7 +486,8 @@ html {
   background-color:  rgba(255, 255, 255, 0.1);
   border-radius: 50%;
 }
-.link-join-icon:hover{
+.link-join-icon:hover,
+.link-join-icon:focus{
   background-color: var(--accent);
 }
 .media-icon-join{
@@ -496,7 +502,8 @@ html {
   margin-left: 0;
 }
 
-.link-join-icon:hover .media-icon-join{
+.link-join-icon:hover .media-icon-join,
+.link-join-icon:focus .media-icon-join{
   background-color: var(--accent);
 }
 
@@ -534,8 +541,7 @@ html {
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 .button-portfolio:hover,
-.button-portfolio:focus
-{
+.button-portfolio:focus{
     background-color: var(--accent);
     color: var(--invert-text-color);
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
@@ -555,8 +561,10 @@ html {
   background-color: var(--primary-background-color);
   border: none;
   padding: 0;
+  text-decoration: none;
 }
-.servise-card-button:hover{
+.servise-card-button:hover,
+.servise-card-button:focus {
  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);;
 }
 .service-card {
@@ -572,6 +580,7 @@ html {
   }
   .service-title {
     font-size: 18px;
+    color: var(--secondary-text-color);
     line-height: 2;
     letter-spacing: 0.06em;
     margin-bottom: 4px;
